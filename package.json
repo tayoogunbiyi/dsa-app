@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayoogunbiyi/dsa-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tayoogunbiyi/dsa-app/issues"
+  },
+  "homepage": "https://github.com/tayoogunbiyi/dsa-app#readme",
+  "dependencies": {
+    "prando": "^5.1.1"
+  }
+}
