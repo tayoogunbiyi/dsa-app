@@ -1,10 +1,10 @@
 const Prando = require('prando').default;
 const { members } = require('./constants')
-const { getNearestMonday,getNearestSunday,deterministicShuffle} = require('./utils');
+const { getNearestMonday,getNextSunday,deterministicShuffle} = require('./utils');
 
 
 function getWeekRangeString(){
-	return getNearestMonday(new Date) + " - " + getNearestSunday(new Date())
+	return getNearestMonday() + " - " + getNextSunday()
 }
 
 function generateRandomPairings(){
@@ -19,9 +19,9 @@ function generateRandomPairings(){
 	const element = document.getElementById("app")
 	let content = '<div>'
 	content += `<h2> Pairings for the week ${getWeekRangeString()}</h2>`
-	content += '<ol>'
+	content += '<ul>'
 	pairings.forEach((pair) => content+= pair)
-	content += '</ol>'
+	content += '</ul>'
 	element.innerHTML = content
 
 }

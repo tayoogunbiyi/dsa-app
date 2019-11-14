@@ -1,0 +1,17 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    color: white;
+    font-weight: 600;
+    margin: 5px;
+    text-align: left;
+    list-style-type: square
+}
