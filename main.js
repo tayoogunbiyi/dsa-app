@@ -57,7 +57,7 @@ function getSunday(d) {
 
 let rng = new Prando(getMonday(new Date) + " - " + getSunday(new Date()));
 
-const people = ["Tayo","Samad","Dare","Yahaya", "Ifere", "Joseph Olabisi", "Moore", "Olumide", "David", "Irene"]
+const people = ["Tayo","Samad","Dare","Yahaya", "Ifere", "Joseph Olabisi", "Moore", "Olumide", "David", "Irene", "Dotun", "Nachi"];
 
 for(let i = 0 ; i < people.length ; i++){
     const j = rng.nextInt(0,i+1)
