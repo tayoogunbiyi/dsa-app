@@ -28,11 +28,10 @@ function getNextSunday(d) {
     var day = currentDate.getDay()
     var diff = currentDate.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
     const nearestMonday  = new Date(currentDate.setDate(diff));
+    nearestMonday.setDate(nearestMonday.getDate() + 6 )
     var dd = nearestMonday.getDate();
     var mm = nearestMonday.getMonth() + 1;
     var yyyy = nearestMonday.getFullYear();
-
-    dd+=6
     return toddMMYYYY(dd,mm,yyyy);
 
 
