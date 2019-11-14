@@ -1,6 +1,3 @@
-const Prando = require('prando');
-
-
 function getNearestMonday() {
     const currentDate = new Date();
     var day = currentDate.getDay()
