@@ -4,7 +4,8 @@
     color: white;
 }
 
-h2 {
+h2,
+.topic {
     text-align: center;
 }
 
@@ -14,4 +15,17 @@ li {
     margin: 5px;
     text-align: left;
     list-style-type: square
+}
+
+ul {
+    text-align: left;
+    margin-left: 0;
+}
+
+.week-title {
+    color: #1683b6
+}
+
+a {
+    color: #1683b6;
 }
