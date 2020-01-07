@@ -1,5 +1,5 @@
 const Prando = require("prando").default;
-const { members } = require("./constants");
+const { members, REFERENCE_DATE_STRING } = require("./constants");
 const {
   getNearestMonday,
   getNextSunday,
@@ -10,28 +10,17 @@ function getWeekRangeString() {
   return getNearestMonday() + " - " + getNextSunday();
 }
 
-function generateRandomPairings() {
-  let rng = new Prando(getWeekRangeString());
-  const pairings = [];
-  const shuffledMembers = deterministicShuffle(members, rng);
-  for (let i = 0; i < shuffledMembers.length; i += 2) {
-    const pairing = `<li>${shuffledMembers[i]} - ${
-      shuffledMembers[i + 1]
-    }</li>`;
-    pairings.push(pairing);
-  }
-
-  const element = document.getElementById("app");
-  let content = "<div>";
-  content += `<h2> 🎅 Pairings for the week ${getWeekRangeString()}</h2>`;
-  content += "<ul>";
-  pairings.forEach(pair => (content += pair));
-  content += "</ul>";
-  element.innerHTML = content;
+function weeksSince(dateString) {
+  var date = new Date(dateString);
+  var today = new Date();
+  const result = Math.floor((today - date) / (1000 * 60 * 60 * 24 * 7));
+  return result;
 }
 
 function getRoundNumber() {
-  return 23 % (members.SET_1.length * 2 - 1);
+  return (
+    (weeksSince(REFERENCE_DATE_STRING) + 1) % (members.SET_1.length * 2 - 1)
+  );
 }
 
 function appendScheduleToDOM(participants1, participants2) {
