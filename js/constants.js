@@ -2,10 +2,10 @@ module.exports = {
   members: {
     SET_1: ["Tayo", "Samad", "Dare", "Yahaya", "Ifere", "Samuel", "Caleb"],
     SET_2: [
-      "Emeka Nachi",
+      "Patrick Ofili",
       "Paul Ofili",
       "David",
-      "Irene",
+      "Doyin",
       "Timi Tayo",
       "Moore",
       "Tobi"
