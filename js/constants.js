@@ -1,14 +1,6 @@
 module.exports = {
   members: {
-    SET_1: [
-      "Tayo",
-      "Samad",
-      "Dare",
-      "Yahaya",
-      "Ifere",
-      "Joseph Olabisi",
-      "Caleb"
-    ],
+    SET_1: ["Tayo", "Samad", "Dare", "Yahaya", "Ifere", "Samuel", "Caleb"],
     SET_2: [
       "Emeka Nachi",
       "Paul Ofili",
