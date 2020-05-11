@@ -3,7 +3,7 @@ const { members, REFERENCE_DATE_STRING } = require("./constants");
 const {
   getNearestMonday,
   getNextSunday,
-  deterministicShuffle
+  deterministicShuffle,
 } = require("./utils");
 
 function getWeekRangeString() {
@@ -33,7 +33,7 @@ function appendScheduleToDOM(participants1, participants2) {
   let content = "<div>";
   content += `<h2>Pairings for the week ${getWeekRangeString()}</h2>`;
   content += "<ul>";
-  pairings.forEach(pair => (content += pair));
+  pairings.forEach((pair) => (content += pair));
   content += "</ul>";
   element.innerHTML = content;
 }

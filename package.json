@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/tayoogunbiyi/dsa-app#readme",
   "dependencies": {
-    "prando": "^5.1.1",
-    "parcel": "*"
+    "parcel": "*",
+    "prando": "^5.1.2"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
