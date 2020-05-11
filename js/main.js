@@ -48,6 +48,7 @@ function generateSchedule() {
 // https://en.wikipedia.org/wiki/Round-robin_tournament#Scheduling_algorithm
 function schedulingAlgorithm(participants1, participants2, week) {
   let rotations = week - 1;
+  console.log(`Week - ${week}, Rotations - ${rotations}`);
   while (rotations > 0) {
     rotations -= 1;
     const first_participant_2 = participants2[0];

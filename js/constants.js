@@ -13,6 +13,6 @@ module.exports = {
       "David Evbo"
     ]
   },
-  REFERENCE_DATE_STRING: "January 13, 2020",
+  REFERENCE_DATE_STRING: "January 06, 2020",
   SEED: "oqiefi1293919qnwkasdasd0s"
 };
