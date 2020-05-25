@@ -8,7 +8,7 @@ module.exports = {
       "Empty",
       "Samuel",
       "Caleb",
-      "Abubakar",
+      "Empty",
       "Joe Olabisi",
     ],
     SET_2: [
