@@ -1,6 +1,16 @@
 module.exports = {
   members: {
-    SET_1: ["Tayo",  "David Popoola","Doyin", "Paul Ofili", "Jade", "Samuel", "Caleb","Abubakar","Joe Olabisi"],
+    SET_1: [
+      "Tayo",
+      "David Popoola",
+      "Doyin",
+      "Paul Ofili",
+      "-",
+      "Samuel",
+      "Caleb",
+      "Abubakar",
+      "Joe Olabisi",
+    ],
     SET_2: [
       "Samad",
       "Moore",
@@ -10,9 +20,9 @@ module.exports = {
       "Yahaya",
       "Tobi",
       "Ifere",
-      "David Evbo"
-    ]
+      "David Evbo",
+    ],
   },
   REFERENCE_DATE_STRING: "January 06, 2020",
-  SEED: "oqiefi1293919qnwkasdasd0s"
+  SEED: "oqiefi1293919qnwkasdasd0s",
 };
