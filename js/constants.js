@@ -5,7 +5,7 @@ module.exports = {
       "David Popoola",
       "Doyin",
       "Paul Ofili",
-      "-",
+      "Empty",
       "Samuel",
       "Caleb",
       "Abubakar",
