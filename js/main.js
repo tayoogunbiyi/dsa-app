@@ -32,8 +32,6 @@ function appendScheduleToDOM(participants1, participants2) {
   const element = document.getElementById("app");
   let content = "<div>";
   content += `<h2>Pairings for the week ${getWeekRangeString()}</h2>`;
-  content +=
-    "<h4>Announcement: If you want to beta test the 30 (probably gonna be more than 30) days of algorithms platform we've been building , please send me (Tayo) a dm </h4>";
   content += "<ul>";
   pairings.forEach((pair) => (content += pair));
   content += "</ul>";
